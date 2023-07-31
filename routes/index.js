@@ -1,6 +1,9 @@
 const express = require('express');
+const cors = require('cors');
 const router = express.Router();
 const FileStorage = require('../services/FileStorage');
+
+router.use(cors({ origin: 'http://localhost:3000' }));
 
 /* POST /subscribe */
 router.post('/subscribe', async function (req, res) {
@@ -23,7 +26,7 @@ router.post('/subscribe', async function (req, res) {
 });
 
 /* GET /unsubscribe */
-router.post('/unsubscribe ', async function (req, res) {
+router.post('/unsubscribe', async function (req, res) {
   try {
     await FileStorage.deleteFile('user.json');
     await FileStorage.writeFile('user-analytics.json', []);
