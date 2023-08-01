@@ -18,7 +18,7 @@ router.post('/subscribe', async function (req, res) {
 
     const data = {email: req.body.email};
     await FileStorage.writeFile('user.json', data);
-    await res.json({success: true})
+    res.json({success: true})
   } catch (e) {
     console.log(e);
     res.status(500).send('Internal error');
@@ -31,7 +31,7 @@ router.post('/unsubscribe', async function (req, res) {
     await FileStorage.deleteFile('user.json');
     await FileStorage.writeFile('user-analytics.json', []);
     await FileStorage.writeFile('performance-analytics.json', []);
-    await res.json({success: true})
+    res.json({success: true})
   } catch (e) {
     console.log(e);
     res.status(500).send('Internal error');

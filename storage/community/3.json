@@ -4,6 +4,7 @@
     "avatar": "http://localhost:4000/avatars/avatar2.png",
     "firstName": "Fill",
     "lastName": "Johns",
+    "resume": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis posuere odio, eget pellentesque ipsum.",
     "position": "Lead Designer at Company Name"
   },
   {
@@ -11,6 +12,7 @@
     "avatar": "http://localhost:4000/avatars/avatar3.png",
     "firstName": "Jameson",
     "lastName": "Brown",
+    "resume": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis posuere odio, eget pellentesque ipsum.",
     "position": "Lead Engineer at Company Name"
   },
   {
@@ -18,6 +20,7 @@
     "avatar": "http://localhost:4000/avatars/avatar1.png",
     "firstName": "Kim",
     "lastName": "Chang",
+    "resume": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis posuere odio, eget pellentesque ipsum.",
     "position": "CEO at Company Name"
   }
 ]
